@@ -1,0 +1,145 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: #e9e7e7;
+}
+.img_std{
+    width: 100%;
+    height: 100%;
+}
+.section_1 .right_landing{
+    width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .section_1 .left_landing p{
+        font-size: 0.8rem;
+    }
+}
+.memory_section{
+    min-height: 40vh;
+    background: url(../Images/Section_2_bg.png) center no-repeat;
+    background-size: cover;
+}
+.memory_section p{
+    font-size: 0.9rem;
+}
+.slider .row .card{
+    background: transparent;
+}
+.slider .card .card-body{
+    color: #232323;
+}
+.slider .card .card-body hr{
+    display: inline-block;
+    height: 2px;
+    width: 70px;
+    color: #232323;
+    background-color: #232323;
+}
+.tagline .plane_logo{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+}
+.choose_anywhere{
+    width: 100%;
+    background: url(../Images/Section_5_bg.png) no-repeat center;
+    background-size: 100% 100%;
+}
+.choose_anywhere .row{
+    gap: 10em;
+}
+.choose_anywhere .row .card{
+    background: transparent;
+}
+.choose_anywhere .row .card{
+    width: 25rem;
+}
+.choose_anywhere .row .card:nth-child(1) h2{
+    font-size: 3rem;
+}
+@media screen and (max-width: 768px) {
+    .choose_anywhere .row .card{
+        width: 15rem;
+    }
+    .choose_anywhere .row .card:nth-child(1) h2{
+        font-size: 2rem;
+    }
+    .choose_anywhere p{
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .choose_anywhere{
+        padding: 4% 0;
+    }
+    .choose_anywhere .row{
+        gap: 3em;
+    }
+    .choose_anywhere .row .card{
+        width: 15rem;
+    }
+    .choose_anywhere h2{
+        font-size: 1.5rem;
+    }
+    .choose_anywhere h5{
+        font-size: 0.8rem;
+    }
+}
+.accordian_section .accordion .accordion-item{
+    background: transparent;
+}
+.accordian_section .accordion .accordion-item .accordion-header{
+    border-top: 1px solid #232323;
+    border-bottom: 1px solid #232323;
+}
+
+
+
+
+.form .form_container input,.form .form_container textarea, .form .form_container button{
+    border: 2px solid #232323;
+} 
+.form .form_container input,.form .form_container textarea{
+    background: transparent;
+}
+.form .form_container button{
+    background-color: #232323;
+}
+
+.footer{
+    background: url(../Images/Section_9_bg.png) no-repeat center;
+    background-size: cover;
+}
+
+.navbar-toggler{
+    border: 0;
+}
+
+.navbar-toggler-icon{
+    width: 2em;
+    height: 2em;
+    background-image: url(../Images/hamburger.jpg);
+}
+
+.accordion-button{
+   background-color: transparent;
+}
+
+.accordion .accordion-header button:after {
+    background-image: none;
+    font-family: 'FontAwesome';
+    content: "\f00d";
+    float: right; 
+    /* transition: transform 0.5s; */
+}
+.accordion .accordion-header button.collapsed:after {
+    background-image: none;
+    content: "\f067"; 
+    transform: rotate(-180deg);
+}
